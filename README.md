@@ -61,11 +61,11 @@ To run this project locally, follow these steps:
     ```bash
     # Start the backend server
     cd server
-    npm run dev
+    npm run server
 
     # Start the frontend server in another terminal
     cd client
-    npm start
+    npm run dev
     ```
 
 ## Usage
