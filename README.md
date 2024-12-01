@@ -23,7 +23,7 @@
 - **Frontend**: React, HTML, Tailwind CSS, JavaScript
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **others**: RESTful APIs, JWT for authentication, AI API for image generation(Cloudinary API)
+- **others**: RESTful APIs, JWT for authentication, AI API for image generation(Clipdrop API)
 
 ## Installation
 
@@ -85,3 +85,13 @@ To deploy AI Image Generator in production:
    ```bash
    cd client
    npm run build
+
+   ## Contact
+
+Vaishnavi Prakash - [LinkedIn](https://www.linkedin.com/in/vaishnavi-prakash-b5547921a/) - [Email](mailto:vaishnaviprakash342@gmail.com)
+
+Project Link: [https://github.com/vaishnaviprakash12/Imagify](https://github.com/vaishnaviprakash12/Imagify)
+
+Live Site: 
+
+
