@@ -27,7 +27,7 @@ const registerUser=async (req,res)=>{
         const user=await newUser.save();
         //_id auto genrated in mongodb database for every user
         //genrating token for each id
-        const token=jwt.sign({id:user._id},process.env.JWT_SECRET)
+        const token=jwt.sign({id:user._id},process.env.JWTSECRET)
         //send token in response
         res.json({sucess:true,token,user:{name:user.name}})
     } catch (error) {
@@ -52,7 +52,7 @@ const loginUser=async(req,res)=>{
     const isMatch=await bcrypt.compare(password,user.password);
     //if password matched then create token 
     if(isMatch){
-        const token=jwt.sign({id:user._id},process.env.JWT_SECRET);
+        const token=jwt.sign({id:user._id},process.env.JWTSECRET);
         res.json({sucess:true,token,user:{name:user.name}})
     }
     else{

@@ -32,7 +32,7 @@ export const genrateImage=async(req,res)=>{
         //then using arraybuffer we need to convert the image to base-64
        const {data}= await axios.post('https://clipdrop-api.co/text-to-image/v1',formData,{
             headers: {
-                'x-api-key': process.env.CLIPDROP_API,
+                'x-api-key': process.env.CLIPDROPAPI,
             },
             responseType:'arraybuffer'
         })

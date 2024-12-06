@@ -5,14 +5,10 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-<<<<<<< HEAD:package.json
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
 
-=======
-    "build":"npm install && npm install --prefix client && npm run build --prefix client"
->>>>>>> d08d8b003ed1ffb7c26eed6969f6dda9f583121b:server/package.json
   },
   "author": "",
   "license": "ISC",

@@ -12,7 +12,7 @@ const userAuth=async(req,res,next)=>{
     }
     try {
         //decoded token
-        const tokenDecode=jwt.verify(token,process.env.JWT_SECRET);
+        const tokenDecode=jwt.verify(token,process.env.JWTSECRET);
         //finding user id
         if(tokenDecode.id){
             //add id in body to fetch later using this middleware
