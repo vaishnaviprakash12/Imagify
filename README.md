@@ -92,6 +92,6 @@ Vaishnavi Prakash - [LinkedIn](https://www.linkedin.com/in/vaishnavi-prakash-b55
 
 Project Link: [https://github.com/vaishnaviprakash12/Imagify](https://github.com/vaishnaviprakash12/Imagify)
 
-Live Site: 
+Live Site: https://imagify-2.onrender.com/
 
 
