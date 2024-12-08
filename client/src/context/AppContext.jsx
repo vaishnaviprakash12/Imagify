@@ -13,7 +13,7 @@ const AppContextProvider=(props)=>{
     //Genrate image logic
     const genrateImage=async(prompt)=>{
         try {
-const {data}=await axios.post(backendUrl+'/api/image/genrate-image',{prompt},{headers:{token}});
+const {data}=await axios.post(`${backendUrl}/api/image/genrate-image`,{prompt},{headers:{token}});
 if(data.sucess){
     return data.resultImage
 }
