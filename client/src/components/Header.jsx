@@ -8,12 +8,13 @@ const Header = () => {
   const {user,setShowLogin}=useContext(AppContext);
   const navigate=useNavigate();
   const onClickHandlder=()=>{
-      if(user){
-         navigate("/result")
-      }
-      else {
-          setShowLogin(true)
-      }
+      // if(user){
+      //    navigate("/result")
+      // }
+      // else {
+      //     setShowLogin(false)
+      // }
+      navigate("/result")
   }
   return (
     <motion.div className='flex flex-col justify-center items-center text-center my-20'

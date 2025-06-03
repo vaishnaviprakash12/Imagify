@@ -9,11 +9,11 @@ const AppContextProvider=(props)=>{
     const [showLogin,setShowLogin]=useState(false);
     //if any token present in browser localstorage that will store in token state variable
     const [token,setToken]=useState(localStorage.getItem('token'))
-    const backendUrl=import.meta.env.VITEBACKENDURL
+        const backendUrl=import.meta.env.VITEBACKENDURL || 'http://localhost:3000';
     //Genrate image logic
     const genrateImage=async(prompt)=>{
         try {
-const {data}=await axios.post(backendUrl+'/api/image/genrate-image',{prompt},{headers:{token}});
+const {data}=await axios.post(`${backendUrl}/api/image/genrate-image`,{prompt},{headers:{token}});
 if(data.sucess){
     return data.resultImage
 }

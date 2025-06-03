@@ -17,7 +17,7 @@ const Login = () => {
        e.preventDefault();
        try {
            if(state=='Login'){
-              const {data}=await axios.post(backendUrl+'/api/user/login',{email,password})
+              const {data}=await axios.post(`${backendUrl}/api/user/login`,{email,password})
               //if data sucessfully posted
               if(data.sucess){
                  //send token
@@ -38,7 +38,7 @@ const Login = () => {
             //if state is register user
            else{
             
-              const {data}=await axios.post(backendUrl+'/api/user/register',{name,email,password})
+              const {data}=await axios.post(`${backendUrl}/api/user/login`,{name,email,password})
               //if data sucessfully posted
               if(data.sucess){
                  //send token
