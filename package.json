@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "type": "module",
+   "proxy": "http://127.0.0.1:3000",
   "scripts": {
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
