@@ -9,7 +9,7 @@ const AppContextProvider=(props)=>{
     const [showLogin,setShowLogin]=useState(false);
     //if any token present in browser localstorage that will store in token state variable
     const [token,setToken]=useState(localStorage.getItem('token'))
-        const backendUrl=import.meta.env.VITEBACKENDURL || 'http://localhost:3000';
+        const backendUrl=import.meta.env.VITEBACKENDURL || 'https://imagify-2.onrender.com/';
     //Genrate image logic
     const genrateImage=async(prompt)=>{
         try {
